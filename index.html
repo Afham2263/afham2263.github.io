@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohd Afham Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #111, #1a1a1a);
+      color: #f1f1f1;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      background: #111;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    header p {
+      color: #bbb;
+      margin-top: 4px;
+    }
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .contact-links a {
+      padding: 8px 14px;
+      background: #222;
+      border-radius: 8px;
+      border: 1px solid #333;
+      font-size: 0.9rem;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #444;
+      padding-bottom: 4px;
+    }
+    .skills-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .skills-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px solid #333;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .project-card {
+      background: #222;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid #333;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: #555;
+    }
+    .project-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #4da6ff;
+    }
+    .project-card p {
+      color: #ddd;
+      font-size: 0.9rem;
+    }
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 0.5rem;
+    }
+    .project-tech span {
+      font-size: 0.75rem;
+      background: #333;
+      padding: 3px 8px;
+      border-radius: 999px;
+    }
+    aside .card {
+      background: #222;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid #333;
+      margin-bottom: 1rem;
+    }
+    aside h3 {
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-bottom: 0.5rem;
+    }
+    aside a {
+      display: block;
+      margin-bottom: 0.4rem;
+      color: #4da6ff;
+    }
+    @media (max-width: 900px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Mohd Afham</h1>
+      <p>Data Analyst | ML Experiments | LLM Integration</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:afham2263@gmail.com">📧 Email</a>
+      <a href="tel:+916301877366">📞 Phone</a>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <section>
+        <h2>Professional Summary</h2>
+        <p>Data Analyst skilled in Python, SQL, Power BI, and AWS with experience in translating raw datasets into actionable insights. Strong foundation in ML and LLM applications, delivering solutions that merge structured and unstructured data for impactful decision-making.</p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li><span>Python</span><span>Advanced</span></li>
+          <li><span>SQL</span><span>Proficient</span></li>
+          <li><span>Power BI</span><span>Proficient</span></li>
+          <li><span>AWS</span><span>Intermediate</span></li>
+          <li><span>LLM & NLP</span><span>Intermediate</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="project-card">
+            <a href="https://github.com/Afham2263/cold-email-generator" target="_blank">
+              <h3>Cold Email Generator (LLM)</h3>
+            </a>
+            <p>LLM-based full-stack tool using LangChain and GPT APIs to generate personalized outreach emails.</p>
+            <div class="project-tech">
+              <span>LangChain</span><span>Streamlit</span><span>ChromaDB</span><span>OpenAI API</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/Afham2263/Weather-app" target="_blank">
+              <h3>Weather Forecasting App</h3>
+            </a>
+            <p>GUI app fetching real-time weather via OpenWeatherMap API with strong error handling.</p>
+            <div class="project-tech">
+              <span>Python</span><span>PyQt5</span><span>API</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/Afham2263/BuzzInsight" target="_blank">
+              <h3>BuzzInsight</h3>
+            </a>
+            <p>Social media data pipeline and analytics tool for trend detection and sentiment analysis.</p>
+            <div class="project-tech">
+              <span>Python</span><span>ETL</span><span>Sentiment Analysis</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/Afham2263/ChainWatch" target="_blank">
+              <h3>ChainWatch</h3>
+            </a>
+            <p>Blockchain monitoring tool with alerts for suspicious transactions and chain activity.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Web3</span><span>Alerts</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>Hybrid Information Mixing for Stock Prediction</h3>
+            <p>Hybrid model with GRU + BERT embeddings for financial news and stock prices, improving benchmarks.</p>
+            <div class="project-tech">
+              <span>Python</span><span>GRU</span><span>BERT</span><span>MLP</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>Power BI Dashboard for Blinkit</h3>
+            <p>ETL + KPI visualization for sales trends and inventory analytics.</p>
+            <div class="project-tech">
+              <span>Power BI</span><span>ETL</span><span>KPI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside>
+      <div class="card">
+        <h3>Profiles</h3>
+        <a href="https://github.com/Afham2263" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/Afham22/" target="_blank">LinkedIn</a>
+      </div>
+      <div class="card">
+        <h3>Resume</h3>
+        <a href="resume.pdf" target="_blank">Download CV</a>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
